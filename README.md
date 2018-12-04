@@ -12,7 +12,7 @@ heroku create pAPP_NAME --team=TEAM_NAME
 ```
 heroku addons:create heroku-postgresql:hobby-dev -a APP_NAME
 heroku addons:create rediscloud:30 -a APP_NAME 
-heroku addons:create sendgrid:starter -a peep-redash
+heroku addons:create sendgrid:starter -a APP_NAME
 ```
 
 ## config
@@ -30,7 +30,7 @@ heroku config:set REDASH_MAIL_PORT=587 -a APP_NAME
 heroku config:set REDASH_MAIL_SERVER=YOUR_ADDON_DOMAIN -a APP_NAME
 heroku config:set REDASH_MAIL_USERNAME=YOUR_ADDON_USERNAME -a APP_NAME
 heroku config:set REDASH_MAIL_USE_TLS=true -a APP_NAME
-heroku config:set REDASH_MAIL_DEFAULT_SENDER=YOUR_MAIL_ADDRESS  -a pAPP_NAME
+heroku config:set REDASH_MAIL_DEFAULT_SENDER=YOUR_MAIL_ADDRESS  -a APP_NAME
 heroku config -a APP_NAMEで変数がすべて入っていることを確認。なければ追加する
 ```
 
