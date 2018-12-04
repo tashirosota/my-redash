@@ -4,7 +4,7 @@
 
 ```
 heroku login
-heroku create pAPP_NAME --team=peep 
+heroku create pAPP_NAME --team=TEAM_NAME
 ```
 
 ## addonの追加
